@@ -1,0 +1,36 @@
+{
+  "name": "dsh-tool-groups",
+  "version": "0.1.0",
+  "description": "按需加载的工具组：把 MCP 工具与技能编组，Agent 先 load 再调用，默认不占系统提示。灵感来自 AgentScope。",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  }
+}

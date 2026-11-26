@@ -1,0 +1,48 @@
+# ── OS ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── 编辑器 ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Node ───────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── 打包/构建产物 ──────────────────────────────────
+dist/
+*.tgz
+*.zip
+*.asar
+
+# ── 运行时数据 ─────────────────────────────────────
+# 真实配置在 <DSH_HOME>/dsh-tool-groups/config.json，不在仓库里；
+# 这里兜底，防止有人把本地配置/会话日志复制进来。
+.dsh/
+config.json
+*.local.json
+*.log
+*.jsonl
+tmp/
+temp/
+
+# ── 凭据/证书（永不入库）──────────────────────────
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# ── 本机参考资料/工具（不随插件分发）──────────────
+ref/
+tools/
+backup/

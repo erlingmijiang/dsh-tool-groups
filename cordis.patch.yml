@@ -1,0 +1,5 @@
+# dsh-tool-groups — bundle patch.
+# The browser half is picked up through this package's dsh.client declaration.
+- insert:
+    - id: dsh-tool-groups
+      name: 'dsh-tool-groups'

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Tool groups",
+    "description": "Keep optional tools, MCP tools, and skills out of the system prompt until a tool group is loaded on demand. Resident tools and ungrouped tools always stay loaded.",
+    "detail": "docs/DETAIL.md"
+  }
+}
